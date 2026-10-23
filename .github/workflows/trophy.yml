@@ -21,9 +21,9 @@ jobs:
         uses: Erik-Donath/github-profile-trophy@feature/generate-svg
         with:
           username: ${{ github.repository_owner }}
-output_path: trophy.svg
-token: ${{ secrets.GITHUB_TOKEN }}
-theme: dracula
+          output_path: dist/trophy.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          theme: dracula
 
       - name: Push trophy.svg to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
