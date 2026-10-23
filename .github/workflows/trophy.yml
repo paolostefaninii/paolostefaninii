@@ -24,8 +24,13 @@ jobs:
           file: dist/trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           theme: dracula
+          max-rows: 1
+          margin-width: 8
+          margin-height: 8
+          no-background: false
+          no-frame: false
 
-      - name: Push trophy.svg to output branch
+      - name: Publish trophy.svg
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: trophy-output
